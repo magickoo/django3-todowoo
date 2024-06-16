@@ -1,10 +1,7 @@
-# We are making our own form
-
 from django.forms import ModelForm
 from .models import Todo
 
 class TodoForm(ModelForm):
     class Meta:
         model = Todo
-        fields= ['titles','memo','important']
-        
+        fields = ['title', 'memo', 'important']
